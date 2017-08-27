@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页导航定位效果</title>
+    <link rel="stylesheet" href="../lib/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div id="main-content"></div>
+    <script id="category-template" type="text/x-handlebars-template">
+        <div class="nav-header">
+            <ul class="nav-list">
+                {{#each navList}}
+                <li class="nav-item" data-id="{{ id }}"><a href="#">{{ name }}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="data-category">
+            <ul class="data-list">
+                {{#each categoryList}}
+                <li class="data-item" id="{{ id }}">
+                    <h3 class="category-title">{{ name }}</h3>
+                    <ul class="category-list">
+                        {{#each category}}
+                        <li class="category-item">
+                            <h4 class="category-name">{{ name }}</h4>
+                            <p class="category-count">{{ bookCount }}</p>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+
+    <script src="../js/bundle.js"></script>
+</body>
+
+</html>

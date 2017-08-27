@@ -1,0 +1,36 @@
+{
+  "name": "web-page-navigation",
+  "version": "1.0.0",
+  "description": "WebPage navigation.",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webpack": "^1.5.0",
+    "handlebars": "^4.0.10",
+    "jquery": "^3.2.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XNAL/WebPageNavigation.git"
+  },
+  "keywords": [
+    "webpage",
+    "navigation"
+  ],
+  "author": "Don",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XNAL/WebPageNavigation/issues"
+  },
+  "homepage": "https://github.com/XNAL/WebPageNavigation#readme"
+}
