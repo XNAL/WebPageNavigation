@@ -50,11 +50,11 @@ function listenScroll() {
             }
 
             $('.nav-list li.nav-item').removeClass('active');
-            if (scrollTop + windowHeight == documentHieght) {
+            if (scrollTop >= documentHieght - windowHeight - 5) {
                 $('.nav-list li.nav-item:last-child').addClass('active');
             } else {
                 let id = $el.attr('id');
-                $('li.nav-item a[href="#' + id + '"]').parent().addClass('active');
+                $('li.nav-item[data-id="' + id + '"]').addClass('active');
             }
         })
     });
@@ -70,7 +70,6 @@ function bindNavClick() {
         let elTop = $('#' + id).offset().top;
         let windowHeight = $(window).height();
         let documentHieght = $(document).height();
-        console.log('elTop', elTop);
-        $(document).scrollTop((elTop + 100));
+        $(document).scrollTop((elTop - 40));
     })
 }
